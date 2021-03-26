@@ -1,0 +1,13 @@
+ <tr>
+        <td class = "flip-card" id = "card${i}}><img src = ${files[i]} onclick="OnClick(${i})"></td>
+        <td class = "flip-card" id = "card${i+1}}><img src = ${files[i+1]} onclick="OnClick(${i+1})></td>
+        <td class = "flip-card" id = "card${i+2}}><img src = ${files[i+2]} onclick="OnClick(${i+2})></td>
+        <td class = "flip-card" id = "card${i+3}}><img src = ${files[i+3]} onclick="OnClick(${i+3})></td>
+        </tr>`;
+
+                <div class = "flip-card">
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+        <img id = "cross${i}" src = "img/cross.png" onclick = "OnClick(event)"></td>
+        </div>
+        <div class="flip-card-back">        </div>
