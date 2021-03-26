@@ -49,6 +49,10 @@ async function OnClick(event) {
             card2 = false;
         }
 
+        if(document.getElementById("pts").innerHTML == "8"){
+            alert("Parabens, voce venceu!")
+        }
+
 
     }
 }
@@ -58,13 +62,12 @@ async function TurnCard(x) {
     console.log(x)
     var id = Number(x.id)
     x.style.transform += "rotateY(180deg)";
-    if (document.getElementById(x.id).src == "file:///C:/Users/Leandro/Documents/Infnet/TPS/JavaScript/At/img/cross.png") {
+    if (x.src == "file:///C:/Users/Leandro/Documents/Infnet/TPS/JavaScript/At/img/cross.png") {
         x.src = cards[id].back;
-        x.onclick = "";
+        x.onclick = null;
     }else{
-        document.getElementById(x.id).src = cards[id].front;
-        x.onclick = "OnClick(event)";
-
+        x.src = cards[id].front;
+        x.setAttribute("onclick", "OnClick(event)");
     }
 
 }
