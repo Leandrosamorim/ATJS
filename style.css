@@ -11,14 +11,13 @@ td{
   width: fit-content;
 }
 #screen{
-  width: 100px;
-  height: 50px;
+  width: 330px;
+  height: 360px;
   position:fixed; 
-  top: 0px; 
-  left: 0px;
+  top: 20px; 
+  left: 12px;
   background-color: black;
   visibility: hidden;
-  opacity: 70%;
 }
   
   .flip-card {
